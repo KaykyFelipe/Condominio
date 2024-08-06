@@ -4,12 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'autorizacao/css/autorizacao.css' %}" width="9%" rel="stylesheet">
     <title>Autorizacao</title>
-    <link href="{% static 'autorizacao/css/autorizacao.css' %}" rel="stylesheet">
 </head>
 <body>
+    <div>
+        <img src="{% static 'autorizacao/img/logo.png' %}" alt="Logo" class="logo">
+    </div>
 
-    <h3 class="font-vinho">Seus Registros</h3>
-    
+    <div class="wrapper">
+        <div class="header font-vinho body-form box wrapper ">
+            <h2>Lista de Condomínios</h2>        
+        </div>
+    </div> 
+
+    <div class="wrapper">
+        <table class="tabela body-form " >
+            <tr>
+                <th>ID</th>
+                <th>Condomínio</th>
+            </tr>   
+            <tr>
+                <td>1</td>
+                <td>Ribeirão Preto</td>
+                <td>
+                    <input type="submit" value="Selecionar" class="btn-custom-primary">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mococa</td>
+                <td>
+                    <input type="submit" value="Selecionar" class="btn-custom-primary">
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
