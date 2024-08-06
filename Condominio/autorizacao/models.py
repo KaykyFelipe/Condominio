@@ -1,10 +1,12 @@
 from django.db import models
 
-class CondominioDB(models.Model):
+class condominio_tabela(models.Model):
     
-    nome_condominio = models.TextField(null=False)
-    regras_mudanca = models.TextField(null=False)
-    diretorio = models.TextField(null=False)
+    nome_condominio = models.TextField()
+    regras_mudanca = models.TextField()
+    diretorio = models.TextField()
+
     
-    class Meta:
-        db_table = 'condominioDB'
+    
+    def __str__(self):
+        return self.nome_condominio
