@@ -27,13 +27,13 @@
                 <th>Condomínio</th>
             </tr> 
             
-            {% for autorizacao_condominio_tabela in dados %}  
+            {% for condominio  in dados %}  
             <tr>
-                <td></td>
-                <td>{{autorizacao_condominio_tabela.nome_condominio}}</td>
+                <td>{{condominio.id}}</td>
+                <td>{{condominio.nome_condominio}}</td>
 
                 <td>
-                    <input type="submit" value="Selecionar" class="btn-custom-primary">
+                    <button type="submit" name="selected_id" value="{{ condominio.id }}" class="btn-custom-primary">Selecionar</button>
                 </td>
             </tr>
             {% endfor %}
