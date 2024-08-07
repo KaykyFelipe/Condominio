@@ -19,26 +19,27 @@
     </div> 
 
     <div class="wrapper">
-        <table class="tabela body-form " >
+        <form action="{% url 'listar_condominios' %}" method="GET">
+        
+        <table class="tabela body-form" >
             <tr>
                 <th>ID</th>
                 <th>Condomínio</th>
-            </tr>   
+            </tr> 
+            
+            {% for autorizacao_condominio_tabela in dados %}  
             <tr>
-                <td>1</td>
-                <td>Ribeirão Preto</td>
+                <td></td>
+                <td>{{autorizacao_condominio_tabela.nome_condominio}}</td>
+
                 <td>
                     <input type="submit" value="Selecionar" class="btn-custom-primary">
                 </td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>Mococa</td>
-                <td>
-                    <input type="submit" value="Selecionar" class="btn-custom-primary">
-                </td>
-            </tr>
+            {% endfor %}
+            
         </table>
+    </form>
     </div>
 </body>
 </html>
