@@ -1,3 +1,49 @@
 .font-vinho{
     color: #2606dd;
  }
+
+ .logo {
+    max-width: 10%; /* Garante que a largura da imagem não ultrapasse a largura do seu contêiner */
+    max-height: 10%; /* Garante que a altura da imagem não ultrapasse a altura do seu contêiner */
+    width: 9%; /* Largura desejada da imagem */
+    height: auto; /* Altura automática para manter a proporção da imagem */
+    display: block; /* Torna a imagem um elemento de bloco */
+    margin: 20px auto 20px; /* Margem superior de 20px, centraliza horizontalmente */
+    text-align: center; /* Centraliza horizontalmente em navegadores antigos */
+}
+
+.header{
+    border-bottom: 1px solid rgb(243, 6, 6);
+}
+
+.body-form{
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 1px black;
+    width: 80.5vw;
+    margin-top: 10px;
+}
+
+.tabela{
+    width: 82vw;
+    /*border-collapse: collapse;  Junta as bordas das células */
+    border: 1px solid #ccc; /* Borda para células e cabeçalhos */
+    padding: 5px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento centralizado do texto */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.btn-custom-primary{
+    background-color: #3D7B80;
+    border: none;
+    box-shadow: 2px 2px 5px 1px black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
