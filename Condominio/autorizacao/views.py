@@ -12,6 +12,6 @@ def autorizar(request):
 
 def listar_condominios(request):
     if request.method == "GET":
-        dados = request.GET.get('condominio_tabela')
+        dados = condominio_tabela.objects.all()
 
-    return render(request, 'listar_condominios.html', {'condominio_tabela': dados})    
+    return render(request, 'autorizacao.html', {'dados': dados})    
